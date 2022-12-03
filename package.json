@@ -1,0 +1,19 @@
+{
+  "name": "clipboard-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "src/js/index.js",
+  "scripts": {
+    "dev": "vite src",
+    "build": "rm -rf dist && vite build src",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Snehamoy Bag",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "sass": "^1.56.1",
+    "vite": "^3.2.4"
+  }
+}
