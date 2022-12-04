@@ -1,0 +1,61 @@
+.btn {
+  --download-padding: 1em 2.5em;
+  --download-border-width: 0.15em;
+  --download-box-shadow: 0 5px 20px -8px;
+  --clr-green: var(--clr-primary-400);
+  --clr-blue: var(--clr-secondary-400);
+  border: none;
+  line-height: 1;
+  
+  &__download {
+    font-weight: var(--fw-semi-bold);
+    padding: var(--download-padding);
+    border-radius: 100vmax;
+    border-bottom: var(--download-border-width) outset;
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 0.75;
+    }
+    
+    &:focus-visible {
+      outline: 2px dotted;
+      outline-offset: 0.25em;
+    }
+    
+    &:active {
+      border-top: var(--download-border-width) inset;
+      border-bottom: none;
+      box-shadow: none;
+    }
+    
+    &--green {
+      background-color: var(--clr-green);
+      color: var(--clr-neutral-100);
+      border-bottom-color: var(--clr-green);
+      box-shadow: var(--download-box-shadow) var(--clr-green);
+      
+      &:focus-visible {
+        outline-color: var(--clr-green);
+      }
+      
+      &:active {
+        border-top-color: var(--clr-green);
+      }
+    }
+    
+    &--blue {
+      background-color: var(--clr-blue);
+      color: var(--clr-neutral-100);
+      border-bottom-color: var(--clr-blue);
+      box-shadow: var(--download-box-shadow) var(--clr-blue);
+      
+      &:focus-visible {
+        outline-color: var(--clr-blue);
+      }
+      &:active {
+        border-top-color: var(--clr-blue);
+      }
+    }
+  }
+}
