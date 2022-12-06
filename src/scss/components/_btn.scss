@@ -1,5 +1,5 @@
 .btn {
-  --download-padding: 1em 2.5em;
+  --download-padding: 1.125em 2.5em;
   --download-border-width: 0.15em;
   --download-box-shadow: 0 5px 20px -8px;
   --clr-green: var(--clr-primary-400);
@@ -8,6 +8,7 @@
   line-height: 1;
   
   &__download {
+    font-size: var(--fs-600);
     font-weight: var(--fw-semi-bold);
     padding: var(--download-padding);
     border-radius: 100vmax;

@@ -1,0 +1,13 @@
+.partners {
+  margin-bottom: var(--spacing-900);
+  
+  &__list img {
+    width: 7.5rem;
+    object-fit: contain;
+  }
+  
+  .even-columns {
+    justify-items: center;
+    gap: var(--spacing-500);
+  }
+}

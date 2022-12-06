@@ -1,0 +1,24 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-400);
+  
+  svg {
+    fill: currentColor;
+    transition: filter 200ms ease;
+  }
+  
+  li {
+    transition: all 200ms ease;
+    
+    &:hover {
+      transform: translateY(-10%);
+      
+      img, svg {
+        transform: scale(110%);
+        filter: drop-shadow(5px 5px 1px hsla(0, 0%, 0%, 0.15));
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.workflow {
+  margin-bottom: var(--spacing-600);
+  
+  &__header {
+    margin-bottom: var(--spacing-600);
+  }
+  
+  &__list-icon {
+    width: 2.5rem;
+    object-fit: contain;
+    margin-bottom: var(--spacing-350);
+    margin-inline: auto;
+  }
+}
