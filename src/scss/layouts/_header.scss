@@ -1,14 +1,19 @@
+@use '../abstracts/breakpoints' as brk;
+
 .header {
   --logo-width: 7.5rem;
-  background-image:
-    linear-gradient(180deg, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 1)),
-    url('/images/backgrounds/bg-header-mobile.png');
+  --bg-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 1));
+  --bg-img: url('/images/backgrounds/bg-header-mobile.png');
+  padding-block: 7.5em 0;
+  background-image: var(--bg-gradient), var(--bg-img);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
-  padding-block: 7.5em 0;
   margin-bottom: var(--spacing-900);
+  
+  @include brk.minWidth(small) {
+    --bg-img: url('/images/backgrounds/bg-header-desktop.png');
+  }
   
   &__logo {
     margin-inline: auto;

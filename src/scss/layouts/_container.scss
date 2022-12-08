@@ -1,11 +1,22 @@
+@use '../abstracts/breakpoints' as brk;
+
 .container {
   max-width: 30rem;
   padding-inline: 1.65em;
   margin-inline: auto;
   
+  @include brk.minWidth(small) {
+    max-width: 80rem;
+    
+    p {
+      max-width: 55ch;
+    }
+  }
+  
   h1, h2, h3,
   p {
     text-align: center;
+    margin-inline: auto;
   }
   
   h1, h2, h3 {

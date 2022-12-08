@@ -1,11 +1,16 @@
 .btn {
-  --download-padding: 1.125em 2.5em;
+  --download-padding: 1.125em 2.75em;
   --download-border-width: 0.15em;
   --download-box-shadow: 0 5px 20px -8px;
   --clr-green: var(--clr-primary-400);
   --clr-blue: var(--clr-secondary-400);
   border: none;
   line-height: 1;
+  
+  &__wrapper {
+    margin-inline: auto;
+    max-width: 30rem;
+  }
   
   &__download {
     font-size: var(--fs-600);

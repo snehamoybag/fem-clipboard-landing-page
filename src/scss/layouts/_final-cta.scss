@@ -1,3 +1,9 @@
+@use '../abstracts/breakpoints' as brk;
+
 .final-cta {
   margin-bottom: var(--spacing-900);
+  
+  @include brk.minWidth(small) {
+    
+  }
 }

@@ -1,5 +1,31 @@
+@use '../abstracts/breakpoints' as brk;
+
 .features {
   margin-bottom: var(--spacing-900);
+  
+  @include brk.minWidth(small) {
+    --img-pos: -8.5rem;
+    --list-txt-width: 35ch;
+    &__list-wrapper {
+      grid-template-columns: 3fr 2fr; // expliciitly defining cell to get desired style
+      align-items: center;
+    }
+    
+    &__cover-img {
+      margin-left: var(--img-pos);
+    }
+    
+    &__list {
+      margin-left: calc(var(--img-pos) + 7.5rem);
+      li {
+        h3, p {
+          text-align: left;
+          margin-inline: unset;
+          max-width: var(--list-txt-width);
+        }
+      }
+    }
+  }
   
   &__cover-img {
     margin-bottom: var(--spacing-400);
