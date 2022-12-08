@@ -13,6 +13,7 @@
   
   @include brk.minWidth(small) {
     --bg-img: url('/images/backgrounds/bg-header-desktop.png');
+    --spacing-900: 9.85rem;
   }
   
   &__logo {

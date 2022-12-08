@@ -4,6 +4,6 @@
   margin-bottom: var(--spacing-900);
   
   @include brk.minWidth(small) {
-    
+    --spacing-900: 9.85rem;
   }
 }

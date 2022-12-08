@@ -1,8 +1,14 @@
+@use '../abstracts/breakpoints' as brk;
+
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-400);
+  gap: var(--spacing-350);
+  
+  @include brk.minWidth(small) {
+    gap: var(--spacing-300);
+  }
   
   svg {
     fill: currentColor;

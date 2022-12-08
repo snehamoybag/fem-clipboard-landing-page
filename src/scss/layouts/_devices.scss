@@ -1,13 +1,15 @@
 @use '../abstracts/breakpoints' as brk;
 
 .devices {
-  
-  @include brk.minWidth(small) {
-    
-  }
+  margin-bottom: var(--spacing-600);
   
   &__cover-img {
     margin-inline: auto;
-    margin-bottom: var(--spacing-600);
+  }
+  
+  .container > p {
+    @include brk.minWidth(small) {
+      margin-bottom: var(--spacing-600);
+    }
   }
 }

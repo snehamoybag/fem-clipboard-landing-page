@@ -3,6 +3,10 @@
 .workflow {
   margin-bottom: var(--spacing-600);
   
+  @include brk.minWidth(small) {
+    margin-bottom: var(--spacing-900);
+  }
+  
   &__header {
     margin-bottom: var(--spacing-600);
   }
@@ -10,7 +14,7 @@
   &__list {
     
     @include brk.minWidth(small) {
-      grid-column-gap: var(--spacing-350);
+      gap: var(--spacing-400);
     }
   }
   

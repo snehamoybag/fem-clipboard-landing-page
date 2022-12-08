@@ -1,13 +1,21 @@
+@use '../abstracts/breakpoints' as brk;
+
 .partners {
+  --logo-width: 7.5rem;
   margin-bottom: var(--spacing-900);
   
-  &__list img {
-    width: 7.5rem;
-    object-fit: contain;
+  @include brk.minWidth(medium) {
+    --logo-width: 10rem;
   }
   
-  .even-columns {
+  &__list {
     justify-items: center;
+    align-items: center;
     gap: var(--spacing-500);
+    
+    img {
+      width: var(--logo-width);
+      object-fit: contain;
+    }
   }
 }

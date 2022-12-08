@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints' as brk;
+
 .footer {
   text-align: center;
   padding-top: 3em;
@@ -21,19 +23,33 @@
     }
   }
   
-  &__logo {
-    width: 3.25rem;
-    object-fit: contain;
-    margin-inline: auto;
+  &__extras {
     margin-bottom: var(--spacing-350);
+    justify-items: center;
+    align-items: center;
+    gap: var(--spacing-350);
+    
+    @include brk.minWidth(small) {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+  }
+  &__logo {
+    
+    img {
+      width: 3.25rem;
+      object-fit: contain;
+      margin-inline: auto;
+    }
   }
   
   &__site-maps {
-    gap: var(--spacing-300);
-    margin-bottom: var(--spacing-350);
-  }
-  
-  .social-icons {
-    margin-bottom: var(--spacing-350);
+    grid-row-gap: var(--spacing-300);
+    
+    @include brk.minWidth(small) {
+      justify-self: start;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: var(--spacing-400);
+      text-align: left;
+    }
   }
 }

@@ -4,21 +4,34 @@
   margin-bottom: var(--spacing-900);
   
   @include brk.minWidth(small) {
-    --img-pos: -8.5rem;
+    --img-pos: -25%;
+    --lis-pos: -15%;
     --list-txt-width: 35ch;
-    &__list-wrapper {
+  }
+  
+  &__list-wrapper {
+    
+    @include brk.minWidth(small) {
       grid-template-columns: 3fr 2fr; // expliciitly defining cell to get desired style
       align-items: center;
     }
+  }
+  
+  &__cover-img {
+    margin-left: var(--img-pos);
+    margin-bottom: var(--spacing-400);
+  }
     
-    &__cover-img {
-      margin-left: var(--img-pos);
+  &__list {
+    margin-left: var(--lis-pos);
+    
+    h3 {
+      margin-bottom: var(--spacing-100);
     }
     
-    &__list {
-      margin-left: calc(var(--img-pos) + 7.5rem);
-      li {
-        h3, p {
+    li {
+      h3, p {
+        @include brk.minWidth(small) {
           text-align: left;
           margin-inline: unset;
           max-width: var(--list-txt-width);
@@ -27,11 +40,9 @@
     }
   }
   
-  &__cover-img {
-    margin-bottom: var(--spacing-400);
-  }
-  
-  &__list h3 {
-    margin-bottom: var(--spacing-100);
+  .container > p {
+    @include brk.minWidth(small) {
+      margin-bottom: var(--spacing-600);
+    }
   }
 }

@@ -2,7 +2,11 @@
 
 .cta {
   
-  .even-columns {
+  h2, h3, p {
+    max-width: 55ch;
+  }
+  
+  .btn__wrapper {
     gap: var(--spacing-300);
   }
 }
