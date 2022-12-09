@@ -2,7 +2,7 @@
   "name": "clipboard-landing-page-master",
   "version": "1.0.0",
   "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
-  "main": "src/js/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "vite src",
     "build": "rm -rf dist && vite build src",
