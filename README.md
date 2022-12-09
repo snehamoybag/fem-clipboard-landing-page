@@ -28,11 +28,11 @@ Users should be able to:
 
 ### Screenshots
 
-- [Desktop](./screenshots/Frontend-Mentor-Clipboard-landing-page-desktop.png) - (1440px)
+- [Desktop](./screenshots/Clipboard-landing-page-desktop.jpeg) - (1440px)
 
-- [Tablet](./screenshots/Frontend-Mentor-Clipboard-landing-page-tablet.png) - (1024px)
+- [Tablet](./screenshots/Clipboard-landing-page-tablet.jpeg) - (1024px)
 
-- [Mobile](./screenshots/Frontend-Mentor-Clipboard-landing-page.png) - (375px)
+- [Mobile](./screenshots/Clipboard-landing-page-mobile.jpeg) - (375px)
 
 ### Links
 
