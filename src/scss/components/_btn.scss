@@ -9,7 +9,12 @@
 
   &__wrapper {
     margin-inline: auto;
-    max-width: 32rem;
+    max-width: 30rem;
+  }
+
+  &__download,
+  &__green {
+    white-space: nowrap;
   }
 
   &__download {
